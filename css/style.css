@@ -27,11 +27,11 @@ ul {
 /* H1 */
 .hero-item {
   padding-top: 200px;
-  padding-bottom: 175px;
+  /*padding-bottom: 175px; */
 }
 
 .main-heading {
-  margin-bottom: 46px;
+  margin-bottom: 30px;
 
   font-style: normal;
   font-weight: 900;
@@ -46,14 +46,22 @@ ul {
 }
 
 .hero-section {
-  width: 100%;
+  max-width: 1600px;
+  height: 600px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 
-  background-image: url(../images/Header-img.jpg);
-  box-shadow: 0 0 0 300px rgba(0, 0, 0, 0.75) inset;
-  background-blend-mode: overlay;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/Header-img.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-button {
@@ -109,6 +117,30 @@ ul {
   line-height: 1.71;
 }
 
+.third-heading::before {
+  display: block;
+  content: '';
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  margin-top: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+.clock::before {
+  background-image: url(../images/clock.svg);
+}
+.diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+.astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+
 .team-member-position,
 .team-member-name {
   font-size: 16px;
@@ -137,7 +169,6 @@ ul {
 }
 
 .about-us-item .third-heading {
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 

@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  width: 1600px;
+  /* width: 1600px; */
   margin-right: auto;
   margin-left: auto;
 }
@@ -46,6 +46,35 @@ ul {
 .contacts-link, .site-nav .link {
  padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.contacts-link::before {
+  display: inline-block;
+  content: "";
+   background-size: contain;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+}
+
+/* мелкие значки письма и телефона в хедере около контактов */
+.email-logo::before {
+  width: 16px;
+  height: 11px;
+  background-image: url('../images/letter.svg');
+}
+
+.phone-logo::before {
+  width: 10px;
+  height: 15px;
+  background-image: url('../images/phone.svg');
+}
+/* костыль для эффекта ховера ковнерта и телефона в хедере */
+.email-logo:hover::before {
+  background-image: url('../images/letter-hover.svg');
+}
+
+.phone-logo:hover::before {
+  background-image: url('../images/phone-hover.svg');
 }
 
 .site-nav .link:hover,
