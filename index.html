@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio v.1</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--Шапка сайта-->
+    <header>
+      <nav class="header-nav">
+        <a href="./index.html" class="header-logo">
+          <span class="header-logo-web">Web</span
+          ><span class="header-logo-studio"> Studio</span>
+        </a>
+        <ul class="site-nav">
+          <li><a href="./index.html" class="link chosen-page">Студия</a></li>
+          <li>
+            <a href="./portfolio.html" class="link">Портфолио</a>
+          </li>
+          <li><a href="" class="link">Контакты</a></li>
+        </ul>
+
+        <ul class="contacts">
+          <li>
+            <a
+              href="mailto:info@devstudio.com"
+              class="contacts-link chosen-page"
+            >
+              <img src="./images/letter.svg" alt="емейл почта" width="16" />
+              info@devstudio.com</a
+            >
+          </li>
+
+          <li>
+            <a href="tel:+380961111111" class="contacts-link">
+              <img src="./images/phone.svg" alt="логотип телефона" width="10" />
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page">
+      <!-- Herou -->
+      <section class="hero-section">
+        <div class="hero-item">
+          <h1 class="main-heading">
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
+          <button class="hero-button">Заказать услугу</button>
+        </div>
+      </section>
+      <!-- About us-->
+      <section class="section about-us-section">
+        <h2 class="hidden">Наши преимущества</h2>
+        <ul class="about-us-list">
+          <li class="about-us-item">
+            <div class="about-us-img-box">
+              <img
+                src="./images/antenna.svg"
+                class="about-us-img"
+                alt="спутниковая антена"
+                width="70"
+              />
+            </div>
+            <h3 class="third-heading">Внимание к деталям</h3>
+            <p class="third-heading-par">
+              Идейные соображения, а также начало повседневной работы по
+              формированию позиции.
+            </p>
+          </li>
+          <li class="about-us-item">
+            <div class="about-us-img-box">
+              <img
+                src="./images/clock.svg"
+                class="about-us-img"
+                alt="часы"
+                width="70"
+              />
+            </div>
+            <h3 class="third-heading">Пунктуальность</h3>
+            <p class="third-heading-par">
+              Задача организации, в особенности же рамки и место обучения кадров
+              влечет за собой.
+            </p>
+          </li>
+          <li class="about-us-item">
+            <div class="about-us-img-box">
+              <img
+                src="./images/diagram.svg"
+                class="about-us-img"
+                alt="Диаграма на экране ПК"
+                width="70"
+              />
+            </div>
+            <h3 class="third-heading">Планирование</h3>
+            <p class="third-heading-par">
+              Равным образом консультация с широким активом в значительной
+              степени обуславливает.
+            </p>
+          </li>
+          <li class="about-us-item">
+            <div class="about-us-img-box">
+              <img
+                src="./images/astronaut.svg"
+                class="about-us-img"
+                alt="космонавт"
+                width="70"
+              />
+            </div>
+            <h3 class="third-heading">Современные технологии</h3>
+            <p class="third-heading-par">
+              Значимость этих проблем настолько очевидна, что реализация
+              плановых заданий.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <!-- What are we doing?-->
+      <section class="section wawd-secton">
+        <h2 class="section-heading">Чем мы занимаемся</h2>
+        <ul class="worklist">
+          <li class="worklist-item">
+            <a href=""
+              ><img
+                src="./images/pc-user.jpg"
+                alt="пользователь за ноутбуком"
+                width="370"
+                class="our-work-img"
+            /></a>
+            <h3 class="our-work-heading first">Десктопные приложения</h3>
+          </li>
+          <li class="worklist-item">
+            <a href=""
+              ><img
+                src="./images/smartphone.jpg"
+                alt="смартфон"
+                width="370"
+                class="our-work-img"
+            /></a>
+            <h3 class="our-work-heading second">Мобильные приложения</h3>
+          </li>
+          <li class="worklist-item">
+            <a href=""
+              ><img
+                src="./images/monitor-screen.jpg"
+                alt="экран компьютера"
+                width="370"
+                class="our-work-img"
+            /></a>
+            <h3 class="our-work-heading third">Дизайнерские решения</h3>
+          </li>
+        </ul>
+      </section>
+      <!-- Out team-->
+      <section class="team-section section">
+        <h2 class="section-heading">Наша команда</h2>
+        <ul class="team-section-box">
+          <li>
+            <img
+              src="./images/john-smith.jpg"
+              alt="фото члена команды"
+              width="270px"
+            />
+            <h3 class="team-member-name">John Smith</h3>
+            <p class="team-member-position">Product Designer</p>
+            <ul class="social-links-box">
+              <li>
+                <a href=""
+                  ><img
+                    class="team-social-link-img"
+                    src="./images/instagram.svg"
+                    alt="логотип инстаграмма"
+                    width="44"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="team-social-link-img"
+                    class="team-social-link-img"
+                    class="team-social-link-img"
+                    src="./images/twitter.svg"
+                    alt="логотип твиттера"
+                    width="44"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="team-social-link-img"
+                    src="./images/facebook.svg"
+                    alt="логотип фейсбука"
+                    width="44"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="team-social-link-img"
+                    src="./images/linkedin.svg"
+                    alt="логотип линкедина"
+                    width="44"
+                /></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <img
+              src="./images/marta-stewart.jpg"
+              alt="фото члена команды"
+              width="270px"
+            />
+            <h3 class="team-member-name">Marta Stewart</h3>
+            <p class="team-member-position">Frontend Developer</p>
+            <ul class="social-links-box">
+              <li>
+                <a href=""
+                  ><img
+                    class="team-social-link-img"
+                    class="team-social-link-img"
+                    class="team-social-link-img"
+                    src="./images/instagram.svg"
+                    alt="логотип инстаграмма"
+                    width="44"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="team-social-link-img"
+                    class="team-social-link-img"
+                    class="team-social-link-img"
+                    src="./images/twitter.svg"
+                    alt="логотип твиттера"
+                    width="44"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="team-social-link-img"
+                    class="team-social-link-img"
+                    class="team-social-link-img"
+                    src="./images/facebook.svg"
+                    alt="логотип фейсбука"
+                    width="44"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="team-social-link-img"
+                    class="team-social-link-img"
+                    class="team-social-link-img"
+                    src="./images/linkedin.svg"
+                    alt="логотип линкедина"
+                    width="44"
+                /></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <img
+              src="./images/robert-jakis.jpg"
+              alt="фото члена команды"
+              width="270px"
+            />
+            <h3 class="team-member-name">Robert Jakis</h3>
+            <p class="team-member-position">Marketing</p>
+            <ul class="social-links-box">
+              <li>
+                <a href=""
+                  ><img
+                    class="team-social-link-img"
+                    class="team-social-link-img"
+                    src="./images/instagram.svg"
+                    alt="логотип инстаграмма"
+                    width="44"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="team-social-link-img"
+                    class="team-social-link-img"
+                    src="./images/twitter.svg"
+                    alt="логотип твиттера"
+                    width="44"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="team-social-link-img"
+                    class="team-social-link-img"
+                    src="./images/facebook.svg"
+                    alt="логотип фейсбука"
+                    width="44"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="team-social-link-img"
+                    class="team-social-link-img"
+                    src="./images/linkedin.svg"
+                    alt="логотип линкедина"
+                    width="44"
+                /></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <img
+              src="./images/martin-doe.jpg"
+              alt="фото члена команды"
+              width="270px"
+            />
+            <h3 class="team-member-name">Martin Doe</h3>
+            <p class="team-member-position">UI Designer</p>
+            <ul class="social-links-box">
+              <li>
+                <a href=""
+                  ><img
+                    class="team-social-link-img"
+                    src="./images/instagram.svg"
+                    alt="логотип инстаграмма"
+                    width="44"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="team-social-link-img"
+                    src="./images/twitter.svg"
+                    alt="логотип твиттера"
+                    width="44"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="team-social-link-img"
+                    src="./images/facebook.svg"
+                    alt="логотип фейсбука"
+                    width="44"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="team-social-link-img"
+                    src="./images/linkedin.svg"
+                    alt="логотип линкедина"
+                    width="44"
+                /></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <!-- Our clients-->
+      <section class="section clients-section">
+        <h2 class="section-heading">Постоянные клиенты</h2>
+        <ul class="clients-box">
+          <li>
+            <a href="" class="ya-co-client-href"
+              ><img
+                src="./images/ya-co-logo.png"
+                class="client-img"
+                alt="логотип компании ya-co"
+                width="45"
+            /></a>
+          </li>
+          <li>
+            <a href="" class="tagline-client-href"
+              ><img
+                src="./images/tagline-company.svg"
+                class="client-img"
+                alt="логотип компании tagline"
+                width="40"
+            /></a>
+          </li>
+          <li>
+            <a href="" class="unnamed-client-href"
+              ><img
+                src="./images/unnamed-company.svg"
+                class="client-img"
+                alt="логотип неизвестной компании"
+                width="41"
+            /></a>
+          </li>
+          <li>
+            <a href="" class="foster-client-href"
+              ><img
+                src="./images/foster-peters-logo.svg"
+                class="client-img"
+                alt="логотип компании foster"
+                width="82"
+                height="41"
+            /></a>
+          </li>
+          <li>
+            <a href="" class="brand-client-href"
+              ><img
+                src="./images/brand-logo.svg"
+                class="client-img"
+                alt="логотип компании brand"
+                width="59"
+            /></a>
+          </li>
+          <li>
+            <a href="" class="rag-line-client-href"
+              ><img
+                src="./images/rag-line-logo.svg"
+                class="client-img"
+                alt=" логотип компании tag-line"
+                width="88"
+            /></a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- footer section-->
+    <footer class="footer">
+      <div class="section">
+        <h2 class="hidden">Наши контакты и социальные сети</h2>
+        <div class="footer-boxes">
+          <div class="footer-boxes-item">
+            <a href="./index.html" class="footer-logo">
+              <span class="footer-logo-web">Web</span
+              ><span class="footer-logo-studio"> Studio</span>
+            </a>
+
+            <address class="address">
+              г.Киев, пр-т Леси Украинки, 26<br />
+              <a href="mailto:info@example.com" class="footer-contacts"
+                >info@example.com</a
+              >
+              <br />
+              <a href="tel:+380991111111" class="footer-contacts"
+                >+38 099 111 11 11</a
+              >
+            </address>
+          </div>
+
+          <div class="footer-boxes-item">
+            <b class="footer-action-request">Присоединяйтесь</b>
+            <ul class="address footer-links">
+              <li>
+                <a href="" class="social-link" aria-label="Ссылка на Инстаграмм"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a href="" class="social-link" aria-label="Ссылка на Твиттер"
+                  >Twitter</a
+                >
+              </li>
+              <li>
+                <a href="" class="social-link" aria-label="Ссылка на Фейсбук"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <a href="" class="social-link" aria-label="Ссылка на ЛинкедИн"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-boxes-item">
+            <b class="footer-action-request">Подписаться на рассылку</b>
+            <!-- <a href="" class="button footer-button">Подписаться</a> -->
+            <button class="footer-button">
+              <div class="footer-btn-box">
+                <p class="footer-btn-text">Подписаться</p>
+                <img
+                  src="./images/logo-send.svg"
+                  alt="логотип телеграмма"
+                  width="24px"
+                  class="telegram-logo"
+                />
+              </div>
+            </button>
+          </div>
+        </div>
+        <p class="copyright copyright-box">
+          2020 &#8739; Developed by GoIT Students
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
