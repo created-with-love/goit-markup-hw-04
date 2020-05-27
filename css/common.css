@@ -51,7 +51,7 @@ ul {
 .contacts-link::before {
   display: inline-block;
   content: "";
-   background-size: contain;
+  background-size: contain;
   margin-right: 10px;
   background-repeat: no-repeat;
 }
@@ -102,7 +102,7 @@ ul {
 
 .site-nav,
 .contacts {
-  display: flex;
+  display: inline-flex;
   align-items: center;
 
   font-family: Roboto, sans-serif;
@@ -164,7 +164,6 @@ ul {
 }
 
 /* Footer */
-
 
 /* LOGO */
 .footer-logo {
@@ -234,6 +233,8 @@ ul {
 .footer-action-request:last-child {
  margin-left: 10px;
 }
+
+
 .social-link {
   color: var(--white);
   text-decoration: none;
@@ -253,7 +254,7 @@ ul {
 }
 
 .footer-links {
-  display: flex;
+  display: inline-flex;
   text-align: center;
 }
 
@@ -261,6 +262,40 @@ ul {
   margin-right: 11px;
 }
 
+.social-link::after {
+  display: inline-block;
+content: "";
+width: 44px;
+height: 44px;
+background:  rgba(255, 255, 255, 0.1 );
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+border-radius: 50%;
+}
+
+.social-link:hover::after {
+  background-color: var(--accent-color);
+}
+
+.footer-inst::after {
+background-image: url(../images/instagram-for-footer.svg);
+background-size: 20px 20px;
+
+}
+.footer-fb::after {
+background-image: url(../images/facebook-for-footer.svg);
+background-size: 20px 20px;
+}
+.footer-twitter::after {
+background-image: url(../images/twitter-for-footer.svg);
+background-size: 20px 20px;
+
+}
+.footer-linkedin::after {
+  background-size: 20px 20px;
+background-image: url(../images/linkedin-for-footer.svg);
+}
 /* footer form */
 .footer-form {
   display: flex;
@@ -284,9 +319,13 @@ ul {
 }
 
 .footer-button {
-  padding-left: 35px;
-  padding-right: 35px;
-  text-align: center;
+  padding-left: 29px;
+  padding-right: 28px;
+  
+  display: inline-flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -311,23 +350,18 @@ ul {
   cursor: pointer;
 }
 
-.telegram-logo {
-  display: inline-block;
+.footer-button::after {
+  content: "";
+  background-image: url(../images/logo-send.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
   margin-left: 10px;
-  /* margin-top: 5px; */
+  
 }
 
-.footer-btn-text{
-  display: inline-block;
-}
-
-.footer-btn-box {
-  display: flex;
-  padding-top: 9px;
-  padding-bottom: 9px;
-}
-
-/* Раздел копирайте */
+/* Раздел копирайт */
 .copyright {
   color: rgba(255, 255, 255, 0.4);
   padding-bottom: 21px;
