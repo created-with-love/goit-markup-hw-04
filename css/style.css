@@ -99,6 +99,10 @@ ul {
 }
 
 /* H3 */
+.third-heading {
+  margin-top: 30px;
+}
+
 .third-heading,
 .our-work-heading {
   font-weight: bold;
@@ -117,42 +121,8 @@ ul {
   line-height: 1.71;
 }
 
-.third-heading::before {
-  display: block;
-  content: '';
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  margin-top: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.antenna::before {
-  background-image: url(../images/antenna.svg);
-}
-.clock::before {
-  background-image: url(../images/clock.svg);
-}
-.diagram::before {
-  background-image: url(../images/diagram.svg);
-}
-.astronaut::before {
-  background-image: url(../images/astronaut.svg);
-}
-
-.team-member-position,
-.team-member-name {
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-}
-
-.team-section {
-  background: var(--background-second-color);
-}
-
 /* about us section */
+
 .about-us-section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -161,6 +131,48 @@ ul {
 .about-us-list {
   display: flex;
   justify-content: space-between;
+}
+.about-us-list-icon {
+  display: inline-flex;
+  align-items: center;
+}
+.about-us-img-box {
+  display: inline-flex;
+  align-items: center;
+}
+.antenna-box {
+  padding: 25px 102px;
+}
+
+.antenna-icon {
+  width: 65px;
+  height: 70px;
+}
+
+.clock-box {
+  padding: 25px 102px;
+}
+
+.clock-icon {
+  width: 67px;
+  height: 70px;
+}
+
+.diagram-box {
+  padding: 33px 100px;
+}
+
+.diagram-icon {
+  width: 70px;
+  height: 54px;
+}
+
+.astronaut-box {
+  padding: 25px 100px;
+}
+.astronaut-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .about-us-item {
@@ -174,10 +186,6 @@ ul {
 
 .about-us-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.about-us-img-box {
-  padding: 25px 105px;
 }
 /* What we are doing */
 
@@ -222,6 +230,12 @@ ul {
 }
 
 /* Our team section */
+.team-member-position,
+.team-member-name {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
 
 .team-section-box {
   display: flex;
@@ -241,20 +255,11 @@ ul {
 .team-section-box > li:not(:last-child) {
   margin-right: 30px;
 }
+
 .social-links-box {
   display: flex;
   justify-content: center;
   padding-bottom: 24px;
-}
-
-.social-links-box li:hover {
-  background-color: var(--accent-color);
-  border: 1px solid outset;
-  border-radius: 30px;
-}
-
-.social-links-box li:not(:last-child) {
-  margin-right: 10px;
 }
 
 .team-member-name {
@@ -271,6 +276,34 @@ ul {
   padding-top: 94px;
 }
 
+/* иконки социальных сетей */
+
+.social-links-box-item:hover,
+.social-links-box-item:focus {
+  background-color: var(--accent-color);
+  border-radius: 30px;
+}
+
+.social-links-box-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.link-icon-box {
+  display: block;
+}
+
+.social-link-icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+  fill: var(--icons-color);
+}
+
+.social-link-icon:hover,
+.social-link-icon:focus {
+  fill: var(--white);
+}
+
 /* OUR CLIENTS */
 
 .clients-section .section-heading {
@@ -281,56 +314,80 @@ ul {
   display: flex;
   padding-bottom: 94px;
 }
-.clients-box > li {
+.clients-box > .client-box-item {
   width: calc((100% - 150px) / 6);
+  height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.clients-box li:not(:last-child) {
+.clients-box .client-box-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-box > li:hover {
+.clients-box > .client-box-item:hover {
   border: 1px solid var(--accent-color);
-}
-
-.team-social-link-img {
-  display: block;
 }
 
 /* Коробочки для логотипов наших клиентов */
 
-.clients-box a {
-  display: block;
-  padding-top: 21px;
-  padding-bottom: 21px;
-}
-.clients-box img {
-  display: block;
-}
-.ya-co-client-href {
-  padding-left: 65px;
-  padding-right: 66px;
+.ya-co-logo {
+  width: 44px;
+  height: 49px;
 }
 
+.tagline-logo {
+  width: 40px;
+  height: 52px;
+}
+
+.unnamed-logo {
+  width: 41px;
+  height: 43px;
+}
+
+.foster-logo {
+  width: 80px;
+  height: 42px;
+}
+
+.brand-logo {
+  width: 59px;
+  height: 47px;
+}
+
+.rag-line-logo {
+  width: 88px;
+  height: 45px;
+}
+.client-link {
+  display: block;
+  color: var(--icons-color);
+}
+
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-color);
+}
+
+.client-link-logo {
+  fill: currentColor;
+}
+
+.ya-co-client-href {
+  padding: 20px 63px 21px 63px;
+}
 .tagline-client-href {
-  padding-left: 68px;
-  padding-right: 67px;
+  padding: 19px 65px 19px 65px;
 }
 .unnamed-client-href {
-  padding-left: 63px;
-  padding-right: 71px;
+  padding: 24px 64px 23px 65px;
 }
 .foster-client-href {
-  padding-left: 47px;
-  padding-right: 46px;
+  padding: 24px 45px 24px 45px;
 }
 .brand-client-href {
-  padding-left: 58px;
-  padding-right: 58px;
+  padding: 22px 55px 21px 56px;
 }
-
 .rag-line-client-href {
-  padding-left: 43px;
-  padding-right: 43px;
+  padding: 22px 41px 23px 41px;
 }

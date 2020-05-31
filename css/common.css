@@ -45,36 +45,15 @@ ul {
 
 .contacts-link, .site-nav .link {
  padding-top: 32px;
-  padding-bottom: 32px;
+ padding-bottom: 32px;
 }
 
-.contacts-link::before {
-  display: inline-block;
-  content: "";
-  background-size: contain;
+/* иконки контактов (письмо и телефон) */
+.icon-phone-logo,
+.icon-letter-logo {
+  display: inline-flex;
+  fill: currentColor;
   margin-right: 10px;
-  background-repeat: no-repeat;
-}
-
-/* мелкие значки письма и телефона в хедере около контактов */
-.email-logo::before {
-  width: 16px;
-  height: 11px;
-  background-image: url('../images/letter.svg');
-}
-
-.phone-logo::before {
-  width: 10px;
-  height: 15px;
-  background-image: url('../images/phone.svg');
-}
-/* костыль для эффекта ховера ковнерта и телефона в хедере */
-.email-logo:hover::before {
-  background-image: url('../images/letter-hover.svg');
-}
-
-.phone-logo:hover::before {
-  background-image: url('../images/phone-hover.svg');
 }
 
 .site-nav .link:hover,
@@ -93,6 +72,10 @@ ul {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.contacts-link {
+ align-items: center;
 }
 
 .contacts .contacts-link {
@@ -234,16 +217,6 @@ ul {
  margin-left: 10px;
 }
 
-
-.social-link {
-  color: var(--white);
-  text-decoration: none;
-}
-.social-link:hover,
-.social-link:focus {
-  color: var(--accent-color);
-}
-
 .footer-boxes {
   display: flex;
   padding-bottom: 28px;
@@ -253,49 +226,44 @@ ul {
   justify-content: space-between;
 }
 
+/* Ссылки на соц сети в футере */
 .footer-links {
   display: inline-flex;
-  text-align: center;
 }
 
-.footer-links > li:not(:last-child) {
-  margin-right: 11px;
+.social-link {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+
+  color: var(--white);
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  align-items: center;
+  justify-content: center;
 }
 
-.social-link::after {
-  display: inline-block;
-content: "";
-width: 44px;
-height: 44px;
-background:  rgba(255, 255, 255, 0.1 );
-background-size: contain;
-background-position: center;
-background-repeat: no-repeat;
-border-radius: 50%;
-}
 
-.social-link:hover::after {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
 }
 
-.footer-inst::after {
-background-image: url(../images/instagram-for-footer.svg);
-background-size: 20px 20px;
+.footer-link-box:hover {
+  background-color: var(--accent-color);
+}
 
+.footer-social-link {
+  width: 20px;
+  height: 20px;
 }
-.footer-fb::after {
-background-image: url(../images/facebook-for-footer.svg);
-background-size: 20px 20px;
-}
-.footer-twitter::after {
-background-image: url(../images/twitter-for-footer.svg);
-background-size: 20px 20px;
 
+.address-list-item:not(:last-child) {
+  margin-right: 10px;
 }
-.footer-linkedin::after {
-  background-size: 20px 20px;
-background-image: url(../images/linkedin-for-footer.svg);
-}
+
 /* footer form */
 .footer-form {
   display: flex;
@@ -323,7 +291,6 @@ background-image: url(../images/linkedin-for-footer.svg);
   padding-right: 28px;
   
   display: inline-flex;
-  align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
 
@@ -350,15 +317,12 @@ background-image: url(../images/linkedin-for-footer.svg);
   cursor: pointer;
 }
 
-.footer-button::after {
-  content: "";
-  background-image: url(../images/logo-send.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
+.subscribe-icon {
+  display: inline-flex;
   width: 24px;
   height: 24px;
   margin-left: 10px;
-  
+  fill: currentColor;
 }
 
 /* Раздел копирайт */
