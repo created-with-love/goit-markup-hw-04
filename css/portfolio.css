@@ -92,17 +92,42 @@ body {
   text-decoration: none;
 }
 
-.list-of-products li {
+.list-of-products-item {
+  position: relative;
   width: calc((100% - 60px) / 3);
 }
 
-.list-of-products li:hover,
-.list-of-products li:focus {
+.list-of-products-item:hover,
+.list-of-products-item:focus {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
   border-radius: 5px;
+}
+.list-of-products-item:hover .is-hidden,
+.list-of-products-item:focus .is-hidden {
+  display: block;
+}
+
+.product-item-description {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  padding: 63px 24px;
+  top: 0;
+  left: 0;
+
+  font-size: 18px;
+  line-height: 1.56;
+
+  color: #ffffff;
+  background: rgba(33, 150, 243, 0.9);
+}
+
+.is-hidden {
+  display: none;
+  pointer-events: none;
 }
 
 .product-name {
